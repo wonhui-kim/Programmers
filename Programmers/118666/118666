@@ -1,0 +1,52 @@
+//
+//  118666.swift
+//  Programmers
+//
+//  Created by 김원희 on 2022/09/15.
+//
+
+import Foundation
+
+func solution(_ survey:[String], _ choices:[Int]) -> String {
+    
+    let dict = ["R":0, "T":1, "C":2, "F":3, "J":4, "M":5, "A":6, "N":7]
+    let dictReverse = [0:"R", 1:"T", 2:"C", 3:"F", 4:"J", 5:"M", 6:"A", 7:"N"]
+    var CharScore = Array(repeating: 0, count: 8)
+    
+    survey.enumerated().forEach { (index, element) in
+        let temp = Array(element) //띄어쓰기 없는 문자열을 배열로 저장하기
+        
+//        var score = 0
+//        if choices[index] >= 4 {
+//            score += choices[index] - 4
+//            CharScore[dict[String(temp[1])]!] += score //우측에 점수
+//        } else {
+//            score = 4 - choices[index]
+//            CharScore[dict[String(temp[0])]!] += score //좌측에 점수
+//        }
+        
+        switch choices[index] {
+        case 1..<4:
+            CharScore[dict[String(temp[0])]!] += 4 - choices[index]
+        case 4...7:
+            CharScore[dict[String(temp[1])]!] += choices[index] - 4
+        default:
+            break
+        }
+        
+    }
+    
+    var result = ""
+    for i in 0..<4 {
+        if CharScore[i*2] >= CharScore[i*2+1] {
+            result.append(dictReverse[i*2]!)
+        } else {
+            result.append(dictReverse[i*2+1]!)
+        }
+    }
+    
+    return result
+}
+
+//print(solution(["AN", "CF", "MJ", "RT", "NA"], [5, 3, 2, 7, 5]))
+print(solution(["TR", "RT", "TR"], [7, 1, 3]))
