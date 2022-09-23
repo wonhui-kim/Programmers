@@ -1,5 +1,5 @@
 //
-//  main.swift
+//  main.swift https://school.programmers.co.kr/learn/courses/30/lessons/118667
 //  Programmers
 //
 //  Created by 김원희 on 2022/09/20.
