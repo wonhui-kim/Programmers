@@ -6,6 +6,10 @@
 	objectVersion = 55;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A7EACA6E28F2E20B00421138 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EACA6D28F2E20B00421138 /* main.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		A748543E28D28E4B0070ECE0 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -36,6 +40,8 @@
 		A7B9773E28DECE67005519DF /* 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2.swift; sourceTree = "<group>"; };
 		A7B9774128DED652005519DF /* 4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4.swift; sourceTree = "<group>"; };
 		A7B9774428DEDF9F005519DF /* 5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 5.swift; sourceTree = "<group>"; };
+		A7CCA93928F25BDC00C5FCD9 /* 이진.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "이진.swift"; sourceTree = "<group>"; };
+		A7EACA6D28F2E20B00421138 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		A7FDCB6228D3547B0075FBCD /* 118666 */ = {isa = PBXFileReference; lastKnownFileType = text; path = 118666; sourceTree = "<group>"; };
 		A7FDCB6828D49EC60075FBCD /* 72410.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 72410.swift; sourceTree = "<group>"; wrapsLines = 0; };
 /* End PBXFileReference section */
@@ -90,6 +96,8 @@
 		A748544228D28E4B0070ECE0 /* Programmers */ = {
 			isa = PBXGroup;
 			children = (
+				A7EACA6C28F2E1FE00421138 /* 올바른 괄호 */,
+				A7CCA93828F25BCF00C5FCD9 /* 이진 변환 반복하기 */,
 				A798CB2328F249C100594723 /* 최솟값만들기 */,
 				A798CB2028F1980600594723 /* JadenCase */,
 				A798CB1C28F16DEE00594723 /* 최댓값과 최솟값 */,
@@ -261,6 +269,24 @@
 			path = 5;
 			sourceTree = "<group>";
 		};
+		A7CCA93828F25BCF00C5FCD9 /* 이진 변환 반복하기 */ = {
+			isa = PBXGroup;
+			children = (
+				A7CCA93928F25BDC00C5FCD9 /* 이진.swift */,
+			);
+			name = "이진 변환 반복하기";
+			path = "이진 변환 반복하기";
+			sourceTree = "<group>";
+		};
+		A7EACA6C28F2E1FE00421138 /* 올바른 괄호 */ = {
+			isa = PBXGroup;
+			children = (
+				A7EACA6D28F2E20B00421138 /* main.swift */,
+			);
+			name = "올바른 괄호";
+			path = "올바른 괄호";
+			sourceTree = "<group>";
+		};
 		A7FDCB6128D354740075FBCD /* 118666 */ = {
 			isa = PBXGroup;
 			children = (
@@ -336,6 +362,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7EACA6E28F2E20B00421138 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
