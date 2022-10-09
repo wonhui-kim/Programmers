@@ -26,6 +26,7 @@
 		A798CB1A28F16D1900594723 /* 타.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "타.swift"; sourceTree = "<group>"; };
 		A798CB1E28F16E2200594723 /* 최댓값과최솟값.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "최댓값과최솟값.swift"; sourceTree = "<group>"; };
 		A798CB2128F1981600594723 /* JadenCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JadenCase.swift; sourceTree = "<group>"; };
+		A798CB2428F249CE00594723 /* 최솟값만들기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "최솟값만들기.swift"; sourceTree = "<group>"; };
 		A7B9772928D9D27A005519DF /* 두큐합같게만들기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "두큐합같게만들기.swift"; sourceTree = "<group>"; };
 		A7B9772D28D9E981005519DF /* re.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = re.swift; sourceTree = "<group>"; };
 		A7B9773028DB398D005519DF /* k진수에서소수개수구하기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "k진수에서소수개수구하기.swift"; sourceTree = "<group>"; };
@@ -89,6 +90,7 @@
 		A748544228D28E4B0070ECE0 /* Programmers */ = {
 			isa = PBXGroup;
 			children = (
+				A798CB2328F249C100594723 /* 최솟값만들기 */,
 				A798CB2028F1980600594723 /* JadenCase */,
 				A798CB1C28F16DEE00594723 /* 최댓값과 최솟값 */,
 				A798CB1928F16D0B00594723 /* 타겟넘버 */,
@@ -145,6 +147,15 @@
 				A798CB2128F1981600594723 /* JadenCase.swift */,
 			);
 			path = JadenCase;
+			sourceTree = "<group>";
+		};
+		A798CB2328F249C100594723 /* 최솟값만들기 */ = {
+			isa = PBXGroup;
+			children = (
+				A798CB2428F249CE00594723 /* 최솟값만들기.swift */,
+			);
+			name = "최솟값만들기";
+			path = "최솟값만들기";
 			sourceTree = "<group>";
 		};
 		A7B9772428D9C300005519DF /* 2022KAKAOINTERN */ = {
