@@ -9,20 +9,27 @@ import Foundation
 
 func solution(_ n:Int) -> Int
 {
-    var answer:Int = 0
+    var answer:Int = n+1
     
-    var copy = n
-    let standard = String(n, radix: 2).filter { ($0) == "1" }.count
-    
-    while (true) {
-        let temp = copy+1
-        let next = String(temp, radix: 2).filter { ($0) == "1" }.count
-        
-        if next == standard {
-            return temp
+    while(true) {
+        if n.nonzeroBitCount == answer.nonzeroBitCount {
+            return answer
         }
-        copy += 1
+        answer += 1
     }
+    
+//    var copy = n
+//    let standard = String(n, radix: 2).filter { ($0) == "1" }.count
+//
+//    while (true) {
+//        let temp = copy+1
+//        let next = String(temp, radix: 2).filter { ($0) == "1" }.count
+//
+//        if next == standard {
+//            return temp
+//        }
+//        copy += 1
+//    }
     
     return answer
 }
