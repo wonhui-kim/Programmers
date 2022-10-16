@@ -8,35 +8,23 @@
 import Foundation
 
 func solution(_ brown:Int, _ yellow:Int) -> [Int] {
-    
-    var result = [Int]()
-    
-    for i in 1...brown+yellow {
-        let row = (brown+yellow)/i
+    for i in 1...yellow {
         
-        if row < i {
+        if yellow%i != 0 { //처음에 빠뜨린 조건!
             continue
         }
         
-        if yellow == ((row-2)*(i-2)) {
-            result.append(contentsOf: [row, i])
-            break
+        let row = yellow / i
+
+        if brown+yellow == ((row+2)*(i+2)) {
+            return [row+2, i+2]
         }
-        
     }
     
-//    for i in 1...yellow { //1...2
-//        let row = yellow / i //2, 1
-//
-//        if brown+yellow == ((row+2)*(i+2)) {
-//            result.append(contentsOf: [row+2, i+2])
-//            break
-//        }
-//    }
-    
-    return result
+    return []
 }
 
 print(solution(10, 2)) //[4,3]
 print(solution(8, 1)) //[3,3]
 print(solution(24, 24)) //[8,6]
+print(solution(18, 6))
